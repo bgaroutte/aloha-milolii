@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 .display-4 {
   font-size: 2.5rem;
 }
+
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 .candidate{
-  margin: 15px;
+  margin: 15px 0;
 }
 /*
  * Blog name and description
@@ -150,14 +151,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 24px;
 }
 #main-feature h1{
-  margin-bottom: 36px;
+  font-size: 2rem;
+  margin-bottom: 18px;
 }
+
+#main-feature div{
+  padding: 36px;
+}
+
 .main-feature-a{
-  padding: 72px;
+  padding: 24px;
 }
-.main-feature-b{
-  padding: 72px;
-  font-size: 1.5rem;
+
+.opt{
+  display:none;
+}
+
+.fa-check-square{
+  font-size: 3rem;
 }
 
 /*
@@ -174,15 +185,39 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-/* to make columns same height */
-.row-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+
+@media (min-width: 768px){
+
+  #main-feature h1{
+    font-size: 3rem;
+  }
+  .opt{
+    display: inline-block;
+  }
 }
-.row-height > [class*='col-'] {
-   display: flex;
-   flex-direction: column;
+
+@media (min-width: 768px) { 
+  #main-feature h1{
+      font-size: 3.5rem;
+  }
+  #main-feature div{
+    padding: 48px;
+  }
+  .fa-check-square{
+    font-size: 6rem;
+  }
+
 }
-/* end of equal-height trick */
+
+@media (min-width: 992px) { 
+  #main-feature h1{
+      font-size: 4rem;
+  }
+  .fa-check-square{
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1200px) { ... }
+
+
